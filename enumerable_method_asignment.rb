@@ -9,6 +9,15 @@ module Enumerable
       index += 1
     end
   end
+
+  def my_each_with_index
+    index = 0
+    while index < size
+      elem = self[index]
+      yield(elem, index)
+      index += 1
+    end
+  end
 end
 
 # end module
