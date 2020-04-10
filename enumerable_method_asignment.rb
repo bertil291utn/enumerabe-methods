@@ -86,4 +86,9 @@ end
 
 # end module
 
+def multiply_els(arr, start = nil)
+  total = arr.my_inject(start) { |elem, siguiente| elem * siguiente }
+  total
+end
+
 # rubocop:disable Style/CaseEquality
