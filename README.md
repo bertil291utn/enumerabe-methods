@@ -15,7 +15,7 @@ In order to start with the project:
 1. You need to have ruby environment installed. [Click here for instructions](https://www.ruby-lang.org/en/documentation/installation/)
 2. Clone [this repository :blue_book:](https://github.com/bertil291utn/enumerabe-methods.git)
 3. Run the algorithm file
-    - In a terminal window write `ruby `*`[your_file_path]`*`buble-sort-algorithm.rb`
+    - In a terminal window write `ruby `*`[your_file_path]`*`enumerable_method_asignment.rb`
 
 ## Authors
 
