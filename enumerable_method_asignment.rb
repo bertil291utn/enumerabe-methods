@@ -61,6 +61,27 @@ module Enumerable
     end
     count
   end
+
+  def my_map(procedure = nil)
+    returned_array = []
+    my_each do |elem|
+      returned_array.push((procedure ? procedure.call(elem) : yield(elem)))
+    end
+    returned_array
+  end
+
+  def my_inject(inicio = nil)
+    if inicio.nil?
+      resultado = self[0]
+      index = 1
+    else
+      resultado = inicio
+      index = 0
+    end
+
+    self[index..-1].my_each { |elem| resultado = yield(resultado, elem) }
+    resultado
+  end
 end
 
 # end module
