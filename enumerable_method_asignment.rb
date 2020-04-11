@@ -106,6 +106,10 @@ module Enumerable
     array = is_a?(Array) ? self : to_a
     inicio = argument[0] if argument[0].is_a?(Integer)
     es_simbolo = argument[0] if argument[0].is_a?(Symbol)
+    if argument[0].is_a?(Integer) && argument[1].is_a?(Symbol)
+      inicio = argument[0]
+      es_simbolo = argument[1]
+    end
     resultado = inicio
     if es_simbolo
       array.my_each do |elem|
