@@ -1,9 +1,8 @@
-# Bubble sort algorithm  
+# Enumerable Methods  
 
-> Sorting algorithms are some of the earliest that you typically get exposed to in Computer Science. It may not be immediately obvious how important they are, but it shouldn’t be hard to think of some examples where your computer needs to sort some massive datasets during everyday operations.
+> In this section I learned about the Enumerable module that gets mixed into the Array and Hash classes (among others) and provides you with lots of handy iterator methods. To prove that there’s no magic to it, you’re going to rebuild those methods.
 
-
-In this project, we have written a bubble sort algorithm, split into two methods. The first one is going to sort smallest to highest and the other one is going do the same with `yield` and `block` part. 
+I had to use `yield` and the `#call` method to accomplished.
 
 ## Built With
 
@@ -14,9 +13,9 @@ In this project, we have written a bubble sort algorithm, split into two methods
 In order to start with the project:
 
 1. You need to have ruby environment installed. [Click here for instructions](https://www.ruby-lang.org/en/documentation/installation/)
-2. Clone this repository `https://github.com/bertil291utn/bubble-sort-project.git`
+2. Clone [this repository :blue_book:](https://github.com/bertil291utn/enumerabe-methods.git)
 3. Run the algorithm file
-    - In a terminal window write `ruby `*`[your_file_path]`*`buble-sort-algorithm.rb`
+    - In a terminal window write `ruby `*`[your_file_path]`*`enumerable_method_asignment.rb`
 
 ## Authors
 
@@ -26,12 +25,10 @@ In order to start with the project:
 - Twitter: [@btandayamo](https://twitter.com/batandayamo)
 - Linkedin: [Bertil Tandayamo](http://bit.ly/bertil_linkedin)
 
+## 🤝 Contributing
 
-👤 **Bekhzod Akhrorov**
+Contributions, issues and feature requests are welcome!
 
-- Github:[@Bekhzod96](https://github.com/Bekhzod96)
-- Twitter: [ @Begzod](https://twitter.com/25d47e8987f740b)
-- Linkedin:[@Bekhzod AKhrorov](https://www.linkedin.com/in/bekhzod-akhrorov-b24232113/)
+## Show your support
 
-
-
+Give a ⭐️ if you like this project!
