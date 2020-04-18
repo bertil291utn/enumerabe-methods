@@ -38,29 +38,19 @@ RSpec.describe Enumerable do
   describe '#my_each_with_index' do
     it 'is returning same array as original numbers one' do
       my_result = []
-      result = []
       array_numbers.my_each_with_index { |elem, i| my_result.push(elem + i) }
-      array_numbers.each_with_index { |elem, i| result.push(elem + i) }
-      expect(my_result).to eql(result)
+      expect(my_result).to eql([10, 3, 5, 7, 5, 10])
     end
 
     it 'is returning same array as original string one' do
       my_result = []
-      result = []
       array_string.my_each_with_index { |elem, i| my_result.push(elem + i.to_s) }
-      array_string.each_with_index { |elem, i| result.push(elem + i.to_s) }
-      expect(my_result).to eql(result)
+      expect(my_result).to eql(%w[100 21 32 43 14 55 arbol6])
     end
 
     it 'is returning an enumerator value when there\'s no block given' do
       result = array_string.my_each_with_index
       expect(result).to be_an Enumerator
-    end
-
-    it 'is returning same array as original mix array' do
-      result = []
-      array_mix.my_each_with_index { |elem, _| result.push(elem) }
-      expect(array_mix).to eql(result)
     end
   end
 
@@ -161,11 +151,11 @@ RSpec.describe Enumerable do
     end
 
     it 'returns same array as original with given block' do
-      expect(array_numbers.my_map { |elem| elem * 10 }).to eq(array_numbers.map { |elem| elem * 10 })
+      expect(array_numbers.my_map { |elem| elem * 10 }).to eq([100, 20, 30, 40, 10, 50])
     end
 
     it 'returns same array as original with given proc' do
-      expect(array_numbers.my_map(&my_proc_map)).to eq(array_numbers.map(&my_proc_map))
+      expect(array_numbers.my_map(&my_proc_map)).to eq([100, 20, 30, 40, 10, 50])
     end
   end
 
