@@ -25,9 +25,10 @@ In order to start with the project:
 - In a terminal window type `gem install rspec`
 - Once rspec install has finished, type `rspec --init`
 - You will see a folder `spec` and a file `.rspec`
-- Inside `spec` folder you'll see a `enumerable_spec.rb` file.
+- Inside `spec` folder you'll see a `spec_helper.rb` file.
 
 ### Run
+> We have already created a file called `enumerable_spec.rb`, if you want to create another one with the end *`[your file name]`*`_spec.rb`
 - Open `./spec/enumerable_spec.rb` file
 - Open a terminal window and type `rspec`
 - If all test were passed you will see: 
